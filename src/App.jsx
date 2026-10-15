@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import resumePdf from "./assets/Resume - Vishal Python Full Stack.pdf";
+import resumePdf from "./assets/Vishal Resume.pdf";
 import vk from "./assets/vk.png";
 import ss from "./assets/ss.png";
 
@@ -199,7 +199,7 @@ function App() {
             position to apply my programming skills and contribute to
             developing reliable backend applications.
           </p>
-
+{/* 
           <div className="objective-box">
             <h3>Career Objective</h3>
             <p>
@@ -208,7 +208,7 @@ function App() {
               application development, strengthen my technical skills, and
               build scalable and reliable software solutions.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -270,24 +270,34 @@ function App() {
 
         <div className="education-card">
           <div>
-            <h3>Fresher | Entry-Level Candidate</h3>
-            <p>
-              Seeking an entry-level opportunity to apply Python programming,
-              backend development, API development and database management
-              skills while gaining professional software development
-              experience.
-            </p>
+            <h3>Computer Operator / Teacher</h3>
+            <p className="company-sub">M. S. Heritage School (Lalpur NCR) | April 2025 – July 2026</p>
+            <ul>
+              <li>Managed school computer systems, student records, and digital documentation using MS Excel and Word.</li>
+              <li>Assisted in classroom teaching, basic computer education, and student management operations.</li>
+            </ul>
           </div>
         </div>
 
-        <h3 className="sub-heading">Certifications</h3>
+        <div className="education-card">
+          <div>
+            <h3>Customer & Floor Support</h3>
+            <p className="company-sub">Cogent E-Service (Noida - Sector 63) | October 2023 – March 2024</p>
+            <ul>
+              <li>Resolved customer queries and provided effective technical and process support over calls.</li>
+              <li>Collaborated with team members to streamline daily floor operations and address customer concerns.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* <h3 className="sub-heading">Certifications</h3>
 
         <div className="education-card">
           <div>
             <h3>Python Full Stack Developer</h3>
             <p>DUCAT</p>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* EDUCATION */}
