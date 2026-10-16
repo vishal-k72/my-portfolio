@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import resumePdf from "./assets/Vishal Resume.pdf";
 import vk from "./assets/vk.png";
-import ss from "./assets/ss.png";
+import myntraImg from "./assets/myntra.png";
+import studentImg from "./assets/p1.png";
+import ecomImg from "./assets/p1.png";
+import resumeImg from "./assets/p1.png";
 
 /* =========================
    DATA (resume ke hisaab se)
@@ -71,40 +74,87 @@ const CORE_CONCEPTS = [
   "Web Scraping",
   "Automation",
   "MVC Architecture",
-];
+]; 
+
+// const PROJECTS = [
+//   {
+//     number: "01",
+//     title: "Myntra Clone",
+//     description:
+//       "Myntra e-commerce website clone with an active cart — add and remove items dynamically.",
+//     tech: "HTML · CSS · JavaScript",
+//   },
+//   {
+//     number: "02",
+//     title: "Student Management System",
+//     description:
+//       "Backend system for managing student records with secure JWT authentication, CRUD operations and a PostgreSQL database.",
+//     tech: "Python · FastAPI · PostgreSQL · JWT Auth",
+//     github: PROJECT_LINKS.studentManagement.github,
+//     live: PROJECT_LINKS.studentManagement.live,
+//   },
+//   {
+//     number: "03",
+//     title: "E-Commerce Full Stack Website",
+//     description:
+//       "Full stack e-commerce website that fetches data through APIs and performs CRUD operations with REST APIs.",
+//     tech: "React · Flask · PostgreSQL",
+//   },
+//   {
+//     number: "04",
+//     title: "Resume Analyser with Integrated AI",
+//     description:
+//       "Upload a resume and get AI-generated suggestions to improve it.",
+//     tech: "HTML · CSS · JS · FastAPI · OpenAI",
+//   },
+// ];
+
 
 const PROJECTS = [
   {
     number: "01",
-    title: "Myntra / Amazon Clone",
+    title: "Myntra Clone",
     description:
-      "Myntra and Amazon e-commerce website clones with an active cart — add and remove items dynamically.",
+      "Myntra e-commerce website clone with an active cart — add and remove items dynamically.",
     tech: "HTML · CSS · JavaScript",
+    image: myntraImg,
+    github: "https://github.com/vishal-k72/Myntra-Clone",
+    live: "https://myntra-clone-orcin.vercel.app/",
   },
-  {
-    number: "02",
-    title: "Student Management System",
-    description:
-      "Backend system for managing student records with secure JWT authentication, CRUD operations and a PostgreSQL database.",
-    tech: "Python · FastAPI · PostgreSQL · JWT Auth",
-    github: PROJECT_LINKS.studentManagement.github,
-    live: PROJECT_LINKS.studentManagement.live,
-  },
-  {
-    number: "03",
-    title: "E-Commerce Full Stack Website",
-    description:
-      "Full stack e-commerce website that fetches data through APIs and performs CRUD operations with REST APIs.",
-    tech: "React · Flask · PostgreSQL",
-  },
-  {
-    number: "04",
-    title: "Resume Analyser with Integrated AI",
-    description:
-      "Upload a resume and get AI-generated suggestions to improve it.",
-    tech: "HTML · CSS · JS · FastAPI · OpenAI",
-  },
+
+  // {
+  //   number: "02",
+  //   title: "Student Management System",
+  //   description:
+  //     "Backend system for managing student records with secure JWT authentication, CRUD operations and a PostgreSQL database.",
+  //   tech: "Python · FastAPI · PostgreSQL · JWT Auth",
+  //   image: studentImg,
+  //   github: "https://github.com/vishal/studentmanage",
+  //   live: "https://stydentmanager.com",
+  // },
+  // {
+  //   number: "03",
+  //   title: "E-Commerce Full Stack Website",
+  //   description:
+  //     "Full stack e-commerce website that fetches data through APIs and performs CRUD operations with REST APIs.",
+  //   tech: "React · Flask · PostgreSQL",
+  //   image: ecomImg,
+  //   github: "https://github.com/vishal/ecommerce",
+  //   live: "https://vishalecommerce.com",
+  // },
+  // {
+  //   number: "04",
+  //   title: "Resume Analyser with Integrated AI",
+  //   description:
+  //     "Upload a resume and get AI-generated suggestions to improve it.",
+  //   tech: "HTML · CSS · JS · FastAPI · OpenAI",
+  //   image: resumeImg,
+  //   github: "https://github.com/vishal/resume",
+  //   live: "https://vishalresume.com",
+  // },
 ];
+
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -257,7 +307,8 @@ function App() {
 
         <div className="projects-container">
           {PROJECTS.map((project) => (
-            <Project key={project.number} image={ss} {...project} />
+            // <Project key={project.number} image={ss} {...project} />
+            <Project key={project.number} {...project} />
           ))}
         </div>
       </section>
