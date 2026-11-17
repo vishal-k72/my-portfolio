@@ -122,16 +122,17 @@ const PROJECTS = [
     live: "https://myntra-clone-orcin.vercel.app/",
   },
 
-  // {
-  //   number: "02",
-  //   title: "Student Management System",
-  //   description:
-  //     "Backend system for managing student records with secure JWT authentication, CRUD operations and a PostgreSQL database.",
-  //   tech: "Python · FastAPI · PostgreSQL · JWT Auth",
-  //   image: studentImg,
-  //   github: "https://github.com/vishal/studentmanage",
-  //   live: "https://stydentmanager.com",
-  // },
+  {
+    number: "02",
+    title: "Student Management System",
+    description:
+      "Backend system for managing student records with secure JWT authentication, CRUD operations and a PostgreSQL database.",
+    tech: "Python · FastAPI · PostgreSQL · JWT Auth",
+    image: studentImg,
+    github: "https://vishaaalll.netlify.app/",
+    live: "https://youtube.com",
+  },
+
   // {
   //   number: "03",
   //   title: "E-Commerce Full Stack Website",
