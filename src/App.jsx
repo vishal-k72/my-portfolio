@@ -36,12 +36,13 @@ const SKILL_GROUPS = [
     items: [
       { icon: "flask", name: "Flask", light: true },
       { icon: "fastapi", name: "FastAPI" },
-      { icon: "django", name: "Django (basic)", variant: "plain", light: true },
-      { icon: "pandas", name: "Pandas", light: true },
-      { icon: "numpy", name: "NumPy" },
-      { icon: "matplotlib", name: "Matplotlib", light: true },
-      { badge: "REQ", name: "Requests" },
-      { badge: "BS4", name: "BeautifulSoup" },
+      { icon: "react", name: "React" },
+      // { icon: "django", name: "Django (basic)", variant: "plain", light: true },
+      // { icon: "pandas", name: "Pandas", light: true },
+      // { icon: "numpy", name: "NumPy" },
+      // { icon: "matplotlib", name: "Matplotlib", light: true },
+      // { badge: "REQ", name: "Requests" },
+      // { badge: "BS4", name: "BeautifulSoup" },
     ],
   },
   {
@@ -50,7 +51,7 @@ const SKILL_GROUPS = [
       { icon: "mysql", name: "MySQL" },
       { icon: "postgresql", name: "PostgreSQL" },
       { icon: "sqlite", name: "SQLite" },
-      { icon: "mongodb", name: "MongoDB (basic)" },
+      // { icon: "mongodb", name: "MongoDB (basic)" },
       { icon: "sqlalchemy", name: "SQLAlchemy ORM" },
     ],
   },
@@ -199,11 +200,11 @@ function App() {
 
           <h1>Vishal Kardam</h1>
 
-          <h2>Python Backend Developer</h2>
+          <h2>Python Full Stack Developer | Python Backend Developer</h2>
 
           <p>
             I build reliable backend applications using Python, FastAPI, Flask,
-            REST APIs and SQL databases like PostgreSQL, MySQL and Supabase.
+            REST APIs and SQL databases like PostgreSQL, MySQL with Supabase.
           </p>
 
           <span className="status-badge">● Open to entry-level opportunities</span>
