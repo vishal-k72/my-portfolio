@@ -3,7 +3,7 @@ import "./App.css";
 import resumePdf from "./assets/Vishal Resume.pdf";
 import vk from "./assets/vk.png";
 import myntraImg from "./assets/myntra.png";
-import studentImg from "./assets/p1.png";
+import studentImg from "./assets/p11.png";
 import ecomImg from "./assets/p1.png";
 import resumeImg from "./assets/p1.png";
 
