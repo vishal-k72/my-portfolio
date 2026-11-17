@@ -124,13 +124,13 @@ const PROJECTS = [
 
   {
     number: "02",
-    title: "Student Management System",
+    title: "AI-Based Resume Analyzer System",
     description:
-      "Backend system for managing student records with secure JWT authentication, CRUD operations and a PostgreSQL database.",
-    tech: "Python · FastAPI · PostgreSQL · JWT Auth",
+      "An AI-based Resume Analyzer project that helps students create, improve, and check their resumes using simple AI tools.",
+    tech: "Python · FastAPI · Open-AI",
     image: studentImg,
-    github: "https://vishaaalll.netlify.app/",
-    live: "https://youtube.com",
+    github: "https://github.com/vishal-k72/ai-analyzer/",
+    live: "https://ai-analyzer-blond-rho.vercel.app/",
   },
 
   // {
